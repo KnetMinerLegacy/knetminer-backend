@@ -7,9 +7,9 @@ set -e
 
 out_flag="$1" # Creates this file to signal that the step was successfully completed
 
-# ROGER port: the knetminer-initializer is compiled for Java 25 (upstream Ondex tools need Java <=21,
-# so JAVA_HOME/PATH stay Java 21 for the rest of the pipeline) -- put Java 25 first on PATH for this
-# step only. Also ensure Neo4j is up: on a cached resume neo_export did not re-run, so the DB server
+# ROGER port: the knetminer-initializer is compiled for Java 25 -- put Java 25 first on PATH for this step
+# (JAVA_HOME stays Java 21 for Neo4j; the Ondex tools' Java is resolved in config/environments/roger-env.sh,
+# and is also 25 since the 2026-09-30 Ondex redeploy). Also ensure Neo4j is up: on a cached resume neo_export did not re-run, so the DB server
 # may be stopped (the local ketl_get_neo_url returns a URL unconditionally, so its restart branch
 # never triggers). Guarded to roger so rothhpc4 is unaffected.
 if [[ "$KETL_ENVIRONMENT" == "roger" ]]; then
