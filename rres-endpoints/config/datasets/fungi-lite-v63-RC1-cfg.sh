@@ -1,5 +1,12 @@
 export KETL_REL_NOTES="\n\
 ---------------------------\n\
+Version ${KETL_DATASET_VERSION} 2026-10-20:\n\
+\n\
+- Fusarium culmorum now has two genomes, on distinct taxids: the UK99 v3 assembly with the Rothamsted\n\
+  annotation v1 (FCULMUK99_ gene ids, taxid 5516), and Ensembl's EF1 annotation of GCA_900074845.1\n\
+  (FCUL_ gene ids, taxid 1318462).\n\
+- Zymoseptoria tritici uses the IPO323 annotation (ZtIPO323_ gene ids), matching fungi-premium.\n\
+---------------------------\n\
 Version ${KETL_DATASET_VERSION} 2026-08-25:\n\
 \n\
 - Ported fungi-lite onto the modern ROGER numbered-stage pipeline and the RootHOGs (FastOMA)\n\
