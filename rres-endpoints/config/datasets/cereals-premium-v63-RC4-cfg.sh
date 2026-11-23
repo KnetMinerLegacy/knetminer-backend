@@ -8,7 +8,7 @@ Version ${KETL_DATASET_VERSION} 2026-11:\n\
   (attribute NameSource: own, ortholog or blast); a gene whose only candidate name was too widely shared gets a\n\
   NameHint instead. Gene-publication text mining was rerun with the new names.\n\
 - Gene and protein accessions are labelled with where their links go: REFSEQ for genomes with an NCBI RefSeq\n\
-  annotation, GENBANK for the others, NC_NP for proteins that NCBI Protein knows by our id.\n\
+  annotation, GENBANK for the others; both link to an NCBI search.\n\
   The Arabidopsis reference keeps its TAIR ids. v63-RC3 used NCBI Gene and the new Ensembl gene pages.\n\
 - Rice (japonica): 986 genes no longer carry a neighbouring gene's RAP id. MSU loci shared by several RAP genes\n\
   merged neighbouring genes; they are now left out of the merge.\n\

@@ -8,7 +8,7 @@ Version ${KETL_DATASET_VERSION} 2026-11:\n\
   (attribute NameSource: own, ortholog or blast); a gene whose only candidate name was too widely shared gets a\n\
   NameHint instead. Gene-publication text mining was rerun with the new names.\n\
 - Gene and protein accessions are labelled with where their links go: REFSEQ for genomes with an NCBI RefSeq\n\
-  annotation, GENBANK for the others, NC_NP for proteins that NCBI Protein knows by our id.\n\
+  annotation, GENBANK for the others; both link to an NCBI search.\n\
   The Arabidopsis reference keeps its TAIR ids. Previous versions labelled them all Ensembl.\n\
 - Arabidopsis reference moved to release 63 downloads (TAIR12 gene models unchanged). Removed 48,321 duplicate\n\
   Arabidopsis and 6,600 yeast proteins whose ids were whole FASTA header lines (OMA orthologs now attach to the real\n\

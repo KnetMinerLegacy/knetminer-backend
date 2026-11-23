@@ -25,7 +25,7 @@ Version ${KETL_DATASET_VERSION} 2026-11:\n\
   (attribute NameSource: own, ortholog or blast); a gene whose only candidate name was too widely shared gets a\n\
   NameHint instead. Gene-publication text mining was rerun with the new names.\n\
 - Gene and protein accessions are labelled with where their links go: REFSEQ for genomes with an NCBI RefSeq\n\
-  annotation, GENBANK for the others, NC_NP for proteins that NCBI Protein knows by our id.\n\
+  annotation, GENBANK for the others; both link to an NCBI search.\n\
   The yeast reference keeps its SGD ids. Previous versions labelled them all Ensembl.\n\
 ---------------------------\n\
 Version v63-RC4 2026-11-18:\n\
